@@ -1,0 +1,76 @@
+{
+    "start": {
+      "message": "👋 Welcome to ReadyToLeadAfrica! How can I assist you today?",
+      "options": [
+        { "label": "Learn about our Vision & Mission", "next": "vision_mission" },
+        { "label": "Explore Our Initiatives", "next": "initiatives_menu" },
+        { "label": "How to Get Involved", "next": "get_involved" },
+        { "label": "Contact RTLA", "next": "contact_info" }
+      ]
+    },
+    "vision_mission": {
+      "message": "📌 Our Vision is to create an Africa led by informed, empowered youth shaping democratic values, peace, and prosperity.\n\n🎯 Our Mission is to promote participatory democracy, election integrity, youth development, peacebuilding, and intra-African trade.",
+      "options": [
+        { "label": "Back to Main Menu", "next": "start" }
+      ]
+    },
+    "initiatives_menu": {
+      "message": "🚀 Here are some of our key initiatives. Click on one to learn more:",
+      "options": [
+        { "label": "#FollowTheResult", "next": "follow_result" },
+        { "label": "SheCanServe", "next": "shecanserve" },
+        { "label": "EIP-DPAP", "next": "eip_dpap" },
+        { "label": "ReadyToVote Abia", "next": "readytovote" },
+        { "label": "National Youth Peace Dialogue", "next": "nypd" },
+        { "label": "Back to Main Menu", "next": "start" }
+      ]
+    },
+    "follow_result": {
+      "message": "#FollowTheResult is a civic-tech platform that promotes electoral integrity by enabling citizens to monitor and report election results in real time.",
+      "options": [
+        { "label": "Back to Initiatives", "next": "initiatives_menu" },
+        { "label": "Main Menu", "next": "start" }
+      ]
+    },
+    "shecanserve": {
+      "message": "SheCanServe empowers over 1 million African Millennial and Gen-Z women with governance skills, leadership training, and mentorship opportunities.",
+      "options": [
+        { "label": "Back to Initiatives", "next": "initiatives_menu" },
+        { "label": "Main Menu", "next": "start" }
+      ]
+    },
+    "eip_dpap": {
+      "message": "EIP-DPAP (Electoral Integrity Protection and Democratic Participation & Accountability Project) aims to protect results and empower non-violent democratic participation.",
+      "options": [
+        { "label": "Back to Initiatives", "next": "initiatives_menu" },
+        { "label": "Main Menu", "next": "start" }
+      ]
+    },
+    "readytovote": {
+      "message": "ReadyToVote Abia educates citizens about voting rights and combines voter awareness with free medical outreach in Abia State.",
+      "options": [
+        { "label": "Back to Initiatives", "next": "initiatives_menu" },
+        { "label": "Main Menu", "next": "start" }
+      ]
+    },
+    "nypd": {
+      "message": "The National Youth Peace Dialogue (NYPD) engages youth in peacebuilding and conflict resolution through events and workshops.",
+      "options": [
+        { "label": "Back to Initiatives", "next": "initiatives_menu" },
+        { "label": "Main Menu", "next": "start" }
+      ]
+    },
+    "get_involved": {
+      "message": "🙌 You can get involved by volunteering, donating, or partnering with us. Visit readytoleadafrica.org to join the movement.",
+      "options": [
+        { "label": "Back to Main Menu", "next": "start" }
+      ]
+    },
+    "contact_info": {
+      "message": "📨 You can reach us via email at info@readytoleadafrica.org or follow us on social media @RTLAfrica.",
+      "options": [
+        { "label": "Back to Main Menu", "next": "start" }
+      ]
+    }
+  }
+  
