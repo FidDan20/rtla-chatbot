@@ -4,12 +4,34 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const express = require('express');
+const cors = require('cors');
+const app = express();
+const PORT = process.env.PORT || 5000;
+
+app.use(cors());
+app.use(express.json());
+
+const chatbotFlow = require('./chatbotFlow.json');
+
+app.get('/chat', (req, res) => {
+  const node = req.query.node || 'start';
+  const response = chatbotFlow[node];
+
+  if (response) {
+    res.json(response);
+  } else {
+    res.status(404).json({ message: 'Node not found' });
+  }
+});
+
+app.get('/', (req, res) => {
+  res.send('RTLA Chatbot Backend is Running ✅');
+});
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

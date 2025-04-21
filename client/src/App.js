@@ -5,10 +5,15 @@ function App() {
   const [node, setNode] = useState('start');
   const [data, setData] = useState({ message: '', options: [] });
 
+  const baseUrl = "https://rtla-chatbot-backend.onrender.com";
+
+
   useEffect(() => {
-    axios.get(`http://localhost:5000/chat?node=${node}`).then(res => {
-      setData(res.data);
-    });
+    axios.get(`${baseUrl}/chat?node=${node}`)
+      .then(res => setData(res.data))
+      .catch(err => {
+        console.error("Failed to load chatbot data:", err);
+      });
   }, [node]);
 
   return (
